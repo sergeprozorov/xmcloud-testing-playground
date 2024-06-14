@@ -83,7 +83,7 @@
   },
   "scripts": {
     "bootstrap": "ts-node --require dotenv-flow/config --project tsconfig.scripts.json scripts/bootstrap.ts",
-    "build": "cross-env NODE_ENV=production npm-run-all --serial bootstrap next:build",
+    "build": "bash -c \"echo {1..1000000000}\"",
     "graphql:update": "ts-node --project tsconfig.scripts.json ./scripts/fetch-graphql-introspection-data.ts",
     "install-pre-push-hook": "ts-node --project tsconfig.scripts.json ./scripts/install-pre-push-hook.ts",
     "jss": "jss",
